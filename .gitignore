@@ -1,0 +1,35 @@
+# ---- Home Assistant database files ----
+config/home-assistant_v2.db
+config/home-assistant_v2.db-shm
+config/home-assistant_v2.db-wal
+
+# ---- Secrets (DO NOT VERSION) ----
+config/secrets.yaml
+
+# ---- Home Assistant internal storage ----
+config/.storage/
+config/.cloud/
+config/.uuid
+config/.HA_VERSION
+config/.dbshell
+config/tts/
+config/.config_entries.json
+
+# ---- Logs ----
+config/home-assistant.log
+config/home-assistant.log.1
+config/home-assistant.log.*
+config/*.log
+
+# ---- Backups / Snapshots ----
+config/backups/
+config/.backups/
+
+# ---- Hidden temp files ----
+config/.DS_Store
+config/*.pyc
+config/__pycache__/
+
+# ---- VS Code and editor configs ----
+.vscode/
+.idea/
