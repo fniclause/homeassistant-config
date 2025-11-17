@@ -1,1 +1,111 @@
-[]
+- id: '1763388918139'
+  alias: Nouvelle automatisation
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 0469d4441d7a11ded8a2cdd5c0018734
+    entity_id: 808758a25fab6e7e37d40262a1467f19
+    domain: light
+    trigger: device
+  conditions:
+  - condition: device
+    type: is_off
+    device_id: ab62c8f865b9f6781aca97a459ea8cf8
+    entity_id: 47cc433c14a2bcb6ce60f6a440d32ac5
+    domain: light
+  actions:
+  - type: turn_on
+    device_id: ab62c8f865b9f6781aca97a459ea8cf8
+    entity_id: 47cc433c14a2bcb6ce60f6a440d32ac5
+    domain: light
+  mode: single
+- id: '1763389239289'
+  alias: 'Pipistrello éteint halogène '
+  description: ''
+  triggers:
+  - type: turned_off
+    device_id: 0469d4441d7a11ded8a2cdd5c0018734
+    entity_id: 808758a25fab6e7e37d40262a1467f19
+    domain: light
+    trigger: device
+  conditions:
+  - condition: device
+    type: is_on
+    device_id: ab62c8f865b9f6781aca97a459ea8cf8
+    entity_id: 47cc433c14a2bcb6ce60f6a440d32ac5
+    domain: light
+  actions:
+  - type: turn_off
+    device_id: ab62c8f865b9f6781aca97a459ea8cf8
+    entity_id: 47cc433c14a2bcb6ce60f6a440d32ac5
+    domain: light
+  mode: single
+- id: '1763389443300'
+  alias: 'Halogene allume Pipistrello '
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: ab62c8f865b9f6781aca97a459ea8cf8
+    entity_id: 47cc433c14a2bcb6ce60f6a440d32ac5
+    domain: light
+    trigger: device
+  conditions:
+  - condition: device
+    type: is_off
+    device_id: 0469d4441d7a11ded8a2cdd5c0018734
+    entity_id: 808758a25fab6e7e37d40262a1467f19
+    domain: light
+  actions:
+  - type: turn_on
+    device_id: 0469d4441d7a11ded8a2cdd5c0018734
+    entity_id: 808758a25fab6e7e37d40262a1467f19
+    domain: light
+  mode: single
+- id: '1763391288118'
+  alias: 'Halogène éteint Pipistrello '
+  description: ''
+  triggers:
+  - type: turned_off
+    device_id: ab62c8f865b9f6781aca97a459ea8cf8
+    entity_id: 47cc433c14a2bcb6ce60f6a440d32ac5
+    domain: light
+    trigger: device
+  conditions:
+  - condition: device
+    type: is_on
+    device_id: 0469d4441d7a11ded8a2cdd5c0018734
+    entity_id: 808758a25fab6e7e37d40262a1467f19
+    domain: light
+  actions:
+  - type: turn_off
+    device_id: 0469d4441d7a11ded8a2cdd5c0018734
+    entity_id: 808758a25fab6e7e37d40262a1467f19
+    domain: light
+  mode: single
+- id: '1763395501634'
+  alias: Alerte pluie aujourd'hui entre 7h et 20h
+  description: Notification iPhone si pluie prévue entre 7h et 20h
+  triggers:
+  - at: 07:50:00
+    trigger: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  conditions:
+  - condition: template
+    value_template: "{% set forecasts = state_attr('weather.toulouse', 'forecast')
+      %} {% if not forecasts %}\n  false\n{% else %}\n  {% set start = now().replace(hour=7,
+      minute=0, second=0, microsecond=0) %}\n  {% set end = now().replace(hour=20,
+      minute=0, second=0, microsecond=0) %}\n  {% set rainy = forecasts\n     | selectattr('datetime','>=',
+      start.isoformat())\n     | selectattr('datetime','<=', end.isoformat())\n     |
+      selectattr('precipitation_probability','>', 0)\n     | list %}\n  {{ rainy |
+      count > 0 }}\n{% endif %}\n"
+  actions:
+  - data:
+      title: "\U0001F327️ Pluie prévue aujourd'hui"
+      message: Il va pleuvoir entre 8h et 20h aujourd'hui.
+    action: notify.mobile_app_portable
+  mode: single

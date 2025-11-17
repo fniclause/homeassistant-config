@@ -33,3 +33,6 @@ config/__pycache__/
 # ---- VS Code and editor configs ----
 .vscode/
 .idea/
+
+# ---- tailscale file ----
+tailscale/
