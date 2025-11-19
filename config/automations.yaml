@@ -84,9 +84,9 @@
   mode: single
 - id: '1763395501634'
   alias: Alerte pluie aujourd'hui entre 7h et 20h
-  description: Notification iPhone si pluie prévue entre 7h et 20h
+  description: Notification iPhone si pluie prévue entre 7h et 18h
   triggers:
-  - at: 07:50:00
+  - at: 07:45:00
     trigger: time
     weekday:
     - mon
@@ -96,13 +96,13 @@
     - fri
   conditions:
   - condition: template
-    value_template: "{% set forecasts = state_attr('weather.toulouse', 'forecast')
-      %} {% if not forecasts %}\n  false\n{% else %}\n  {% set start = now().replace(hour=7,
-      minute=0, second=0, microsecond=0) %}\n  {% set end = now().replace(hour=20,
-      minute=0, second=0, microsecond=0) %}\n  {% set rainy = forecasts\n     | selectattr('datetime','>=',
-      start.isoformat())\n     | selectattr('datetime','<=', end.isoformat())\n     |
-      selectattr('precipitation_probability','>', 0)\n     | list %}\n  {{ rainy |
-      count > 0 }}\n{% endif %}\n"
+    value_template: "      {% set forecasts = state_attr('sensor.forecast_horaire_toulouse',\n
+      \     'forecast') %}\n\n\n      {% set today = now().date() %}\n\n      {% set
+      ns = namespace(found=false) %}\n\n\n      {% for f in forecasts %}\n        {%
+      if 'datetime' in f and 'precipitation' in f %}\n          {% set dt = as_datetime(f['datetime']).astimezone(now().tzinfo)
+      %}\n          {% if dt.date() == today and 7 <= dt.hour <= 18 and (f['precipitation']
+      | float) > 0 %}\n            {% set ns.found = true %}\n         {% endif %}\n
+      \       {% endif %}\n      {% endfor %}\n      {{ ns.found }}"
   actions:
   - data:
       title: "\U0001F327️ Pluie prévue aujourd'hui"

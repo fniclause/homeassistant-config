@@ -1,0 +1,26 @@
+# ============================================================
+#  TEMPLATE : Sensor forecast horaire Météo-France
+# ============================================================
+
+- trigger:
+    - platform: time_pattern
+      hours: "/1"               # mise à jour toutes les heures
+    - platform: homeassistant
+      event: start              # et au redémarrage de Home Assistant
+  action:
+    - service: weather.get_forecasts
+      data:
+        type: hourly            # prévisions heure par heure
+      target:
+        entity_id: weather.toulouse
+      response_variable: hourly
+  sensor:
+    - name: "Forecast Horaire Toulouse"
+      unique_id: forecast_horaire_toulouse
+      state: >
+        {{ hourly['weather.toulouse'].forecast[0].condition
+           if hourly is defined else 'unknown' }}
+      attributes:
+        forecast: >
+          {{ hourly['weather.toulouse'].forecast
+             if hourly is defined else [] }}
