@@ -1,7 +1,7 @@
-2025-11-23 09:25:21.056 INFO (MainThread) [music_assistant] Starting Music Assistant Server (e63deababa2f45e4897526a3fff32eae) version 2.6.3 - HA add-on: False - Safe mode: False
-2025-11-23 09:25:21.069 INFO (MainThread) [music_assistant.cache] Initializing cache controller...
-2025-11-23 09:25:21.101 INFO (MainThread) [ffmpeg] Detected ffmpeg version 7.1.1 with libsoxr support
-2025-11-23 09:25:21.108 WARNING (MainThread) [music_assistant.streams] 
+2025-11-24 14:10:45.946 INFO (MainThread) [music_assistant] Starting Music Assistant Server (e63deababa2f45e4897526a3fff32eae) version 2.6.3 - HA add-on: False - Safe mode: False
+2025-11-24 14:10:45.959 INFO (MainThread) [music_assistant.cache] Initializing cache controller...
+2025-11-24 14:10:46.226 INFO (MainThread) [ffmpeg] Detected ffmpeg version 7.1.1 with libsoxr support
+2025-11-24 14:10:46.241 INFO (MainThread) [music_assistant.streams] 
 
 ################################################################################
 Starting streamserver on  192.168.1.43:8097
@@ -11,127 +11,46 @@ See the documentation how to configure the publish IP for the Streamserver
 in Settings --> Core modules --> Streamserver
 ################################################################################
 
-2025-11-23 09:25:21.154 INFO (MainThread) [music_assistant.music] Using a sync interval of 720 minutes.
-2025-11-23 09:25:21.190 WARNING (MainThread) [music_assistant.webserver] 
+2025-11-24 14:10:46.287 INFO (MainThread) [music_assistant.music] Using a sync interval of 720 minutes.
+2025-11-24 14:10:46.313 INFO (MainThread) [music_assistant.webserver] Starting webserver on  0.0.0.0:8095 - base url: http://192.168.1.43:8095
+#
 
-################################################################################
-Starting webserver on  0.0.0.0:8095 - base url: http://192.168.1.43:8095
-If this is incorrect, see the documentation how to configure the Webserver
-in Settings --> Core modules --> Webserver
-################################################################################
+2025-11-24 14:10:47.395 INFO (MainThread) [music_assistant] Loaded metadata provider fanart.tv
+2025-11-24 14:10:47.396 INFO (MainThread) [music_assistant] Loaded music provider Music Assistant
+2025-11-24 14:10:47.396 INFO (MainThread) [music_assistant] Loaded metadata provider The Audio DB
+2025-11-24 14:10:47.397 INFO (MainThread) [music_assistant] Loaded player provider Playergroup
+2025-11-24 14:10:47.399 INFO (MainThread) [music_assistant.players] Player registered: ugp_re7fxsxi/Salon
+2025-11-24 14:10:47.400 INFO (MainThread) [music_assistant] Loaded metadata provider LRCLIB
+2025-11-24 14:10:47.400 INFO (MainThread) [music_assistant] Loaded metadata provider MusicBrainz
+2025-11-24 14:10:47.405 INFO (MainThread) [music_assistant] Loaded player provider Music Assistant
+2025-11-24 14:10:47.412 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
+2025-11-24 14:10:47.425 INFO (MainThread) [music_assistant] Loaded player provider Chromecast
+2025-11-24 14:10:47.753 INFO (MainThread) [music_assistant.players] Player registered: 9d52d63d-500c-3b47-6e03-0ca6aadae9fc/Android TV
+2025-11-24 14:10:47.829 INFO (MainThread) [music_assistant.players] Player registered: ebd636b0-1e3e-7304-472e-7bd074202c0d/La Boîte concept
+2025-11-24 14:12:47.419 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
+2025-11-24 14:14:47.424 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
+2025-11-24 14:16:47.430 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
+2025-11-24 14:18:47.435 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
+2025-11-24 14:20:47.441 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
+2025-11-24 14:21:05.235 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
+2025-11-24 14:21:05.245 ERROR (MainThread) [music_assistant.webserver] Error handling message: player_queues/play_media: No playable items found
+2025-11-24 14:21:46.058 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album &
+2025-11-24 14:21:46.068 ERROR (MainThread) [music_assistant.webserver] Error handling message: player_queues/play_media: No playable items found
+2025-11-24 14:21:54.511 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album &
+2025-11-24 14:21:54.516 ERROR (MainThread) [music_assistant.webserver] Error handling message: player_queues/play_media: No playable items found
+2025-11-24 14:22:47.445 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
+2025-11-24 14:24:47.452 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
+2025-11-24 14:26:47.459 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
+2025-11-24 14:27:37.717 WARNING (MainThread) [music_assistant.webserver] Received unhandled GET request to // from 192.168.1.161
+headers: <CIMultiDictProxy('Host': '192.168.1.43:8095', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,es;q=0.6,it;q=0.5')>
 
-2025-11-23 09:25:21.758 INFO (MainThread) [music_assistant] Loaded metadata provider The Audio DB
-2025-11-23 09:25:21.758 INFO (MainThread) [music_assistant] Loaded metadata provider fanart.tv
-2025-11-23 09:25:21.759 INFO (MainThread) [music_assistant] Loaded player provider Playergroup
-2025-11-23 09:25:21.759 INFO (MainThread) [music_assistant] Loaded music provider Music Assistant
-2025-11-23 09:25:21.760 INFO (MainThread) [music_assistant] Loaded player provider Music Assistant
-2025-11-23 09:25:21.763 INFO (MainThread) [music_assistant] Loaded metadata provider LRCLIB
-2025-11-23 09:25:21.764 INFO (MainThread) [music_assistant] Loaded metadata provider MusicBrainz
-2025-11-23 09:26:01.316 INFO (MainThread) [music_assistant.players] Player registered: ma_gsd228ylbf/This Device
-2025-11-23 09:29:08.221 INFO (MainThread) [music_assistant] Loaded plugin provider Spotify Connect
-2025-11-23 09:29:08.221 INFO (MainThread) [music_assistant.spotify_connect] Starting Spotify Connect background daemon
-2025-11-23 09:30:33.815 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:30:33.815 INFO (MainThread) [music_assistant.spotify] Retrying in 20 seconds...
-2025-11-23 09:30:53.897 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:30:53.897 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:30:54.970 INFO (MainThread) [music_assistant.spotify] Successfully logged in to Spotify as 1132820131
-2025-11-23 09:30:54.971 INFO (MainThread) [music_assistant] Loaded music provider Spotify
-2025-11-23 09:30:55.443 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
-2025-11-23 09:30:57.024 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:30:57.024 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
-2025-11-23 09:31:24.113 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:31:24.113 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:31:25.649 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
-2025-11-23 09:31:25.678 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:31:25.678 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
-2025-11-23 09:31:53.764 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:31:53.764 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:31:56.424 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:31:56.424 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
-2025-11-23 09:32:24.511 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:32:24.511 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:32:25.543 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
-2025-11-23 09:32:25.543 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
-2025-11-23 09:32:55.567 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
-2025-11-23 09:32:55.605 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:32:55.605 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
-2025-11-23 09:33:23.715 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:33:23.715 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:33:27.278 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:33:27.279 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
-2025-11-23 09:33:29.280 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:33:29.280 INFO (MainThread) [music_assistant.spotify] Retrying in 25 seconds...
-2025-11-23 09:33:54.355 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:33:54.355 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:33:54.365 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:33:54.366 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:33:55.821 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:33:55.821 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
-2025-11-23 09:33:57.822 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:33:57.822 INFO (MainThread) [music_assistant.spotify] Retrying in 26 seconds...
-2025-11-23 09:34:23.899 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:34:23.899 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:34:23.904 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:34:23.904 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:34:27.072 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:34:27.073 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
-2025-11-23 09:34:54.196 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:34:54.196 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:34:55.833 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:34:55.833 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
-2025-11-23 09:35:00.011 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:35:00.011 INFO (MainThread) [music_assistant.spotify] Retrying in 24 seconds...
-2025-11-23 09:35:23.917 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:35:23.918 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:35:24.042 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:35:24.042 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:35:27.436 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:35:27.436 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
-2025-11-23 09:35:29.436 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:35:29.437 INFO (MainThread) [music_assistant.spotify] Retrying in 25 seconds...
-2025-11-23 09:35:54.514 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:35:54.515 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:35:54.523 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:35:54.524 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:35:55.546 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
-2025-11-23 09:35:55.547 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
-2025-11-23 09:35:55.554 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
-2025-11-23 09:35:55.555 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
-2025-11-23 09:36:26.847 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:36:26.847 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
-2025-11-23 09:36:34.480 INFO (MainThread) [music_assistant] Loaded player provider Chromecast
-2025-11-23 09:36:34.885 INFO (MainThread) [music_assistant.players] Player registered: ebd636b0-1e3e-7304-472e-7bd074202c0d/La Boîte concept
-2025-11-23 09:36:41.600 INFO (MainThread) [music_assistant.spotify_connect] Spotify Connect background daemon stopped for Spotify Connect
-2025-11-23 09:36:53.942 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:36:53.942 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:36:57.173 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:36:57.173 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
-2025-11-23 09:36:59.950 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:36:59.951 INFO (MainThread) [music_assistant.spotify] Retrying in 24 seconds...
-2025-11-23 09:37:24.035 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:37:24.035 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:37:24.203 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:37:24.203 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:37:27.398 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:37:27.398 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
-2025-11-23 09:37:54.499 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:37:54.500 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:37:55.529 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
-2025-11-23 09:37:55.530 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
-2025-11-23 09:37:59.962 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-23 09:37:59.962 INFO (MainThread) [music_assistant.spotify] Retrying in 24 seconds...
-2025-11-23 09:38:24.046 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-23 09:38:24.046 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:38:24.562 INFO (MainThread) [music_assistant.spotify] Attempt 4/5 failed: Spotify Rate Limiter
-2025-11-23 09:38:24.562 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-23 09:38:25.593 INFO (MainThread) [music_assistant.spotify] Attempt 5/5 failed: Spotify Rate Limiter
-2025-11-23 09:38:25.594 WARNING (MainThread) [music_assistant.music] Sync task for Spotify completed with errors
-2025-11-23 09:51:04.558 WARNING (MainThread) [aiorun] Stopping the loop
-2025-11-23 09:51:04.558 INFO (MainThread) [aiorun] Entering shutdown phase.
-2025-11-23 09:51:04.558 INFO (MainThread) [aiorun] Executing provided shutdown_callback.
-2025-11-23 09:51:04.558 INFO (MainThread) [root] shutdown requested!
-2025-11-23 09:51:04.558 INFO (MainThread) [music_assistant] Stop called, cleaning up...
-2025-11-23 09:51:06.618 INFO (MainThread) [aiorun] Waiting for executor shutdown.
-2025-11-23 09:51:06.623 INFO (MainThread) [aiorun] Shutting down async generators
-2025-11-23 09:51:06.623 INFO (MainThread) [aiorun] Closing the loop.
-2025-11-23 09:51:06.623 INFO (MainThread) [aiorun] Leaving. Bye!
+2025-11-24 14:28:47.465 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
+2025-11-24 14:29:59.370 WARNING (MainThread) [aiorun] Stopping the loop
+2025-11-24 14:29:59.370 INFO (MainThread) [aiorun] Entering shutdown phase.
+2025-11-24 14:29:59.370 INFO (MainThread) [aiorun] Executing provided shutdown_callback.
+2025-11-24 14:29:59.370 INFO (MainThread) [root] shutdown requested!
+2025-11-24 14:29:59.371 INFO (MainThread) [music_assistant] Stop called, cleaning up...
+2025-11-24 14:29:59.408 INFO (MainThread) [aiorun] Waiting for executor shutdown.
+2025-11-24 14:29:59.415 INFO (MainThread) [aiorun] Shutting down async generators
+2025-11-24 14:29:59.415 INFO (MainThread) [aiorun] Closing the loop.
+2025-11-24 14:29:59.416 INFO (MainThread) [aiorun] Leaving. Bye!

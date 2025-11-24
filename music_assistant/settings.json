@@ -66,7 +66,7 @@
     },
     "spotify--QN9Bo9be": {
       "values": {
-        "refresh_token": "_encrypted_gAAAAABpI4HRCDp_pSyrO1PhZKsoLH77NIF4RMlIabt2PT2N8IP3_pbrKSpmPjnTn1VxZ-ZIfD_cxU2ll9KxZKpztTHrh-hpCeQ2nJhycFZqnBm4PpWB2exUwBMoI-2lkWEI9Me7ZplYhbK5sbwJje0Z_qHuc31lOkWyRmU45BDLSTMtIE7w8KSRnXlaqkOxjD6fHJHhn3xuv9ozUROhsglRKAcSTKEKUWhBX5roScNrHKYZakERxwybqMYfKQ-TWFk9ysFhx7l5"
+        "refresh_token": "_encrypted_gAAAAABpJG2aSJyUKfsnDRTIegqyL266a6I7lz-TBe6PNP4mzte5MwAkl0IP6sbxJoDnGgPFas1eWPbccnYdWv90LPQofyU6bGQfI5AsbSjMFkpBk3GzCS7rpw9ZMFopHgxmy714eDf0RpoeOgVia6VzxVyFvVO9AJiSLbZBdmhmGXBGq0s6M5cmyJC5Y5nxoXGc4dZnfgrpULqVqvbrR5RcUfZMZu_Ew9b20IRnLgItzCQtCtZuoKciMTi3IHly6-k6jin0OXJY"
       },
       "type": "music",
       "domain": "spotify",
@@ -111,7 +111,7 @@
       "enabled": true,
       "name": null,
       "available": false,
-      "default_name": "Android TV"
+      "default_name": ""
     },
     "ebd636b0-1e3e-7304-472e-7bd074202c0d": {
       "values": {},
@@ -120,7 +120,7 @@
       "enabled": true,
       "name": null,
       "available": true,
-      "default_name": "La Boîte concept"
+      "default_name": ""
     },
     "ugp_re7fxsxi": {
       "values": {
@@ -135,8 +135,26 @@
       "player_id": "ugp_re7fxsxi",
       "enabled": true,
       "name": null,
-      "available": true,
+      "available": false,
       "default_name": "Salon"
+    },
+    "ma_bzuzytzhap": {
+      "values": {},
+      "provider": "builtin_player",
+      "player_id": "ma_bzuzytzhap",
+      "enabled": true,
+      "name": null,
+      "available": true,
+      "default_name": ""
+    },
+    "ma_tgjrsq64jm": {
+      "values": {},
+      "provider": "builtin_player",
+      "player_id": "ma_tgjrsq64jm",
+      "enabled": true,
+      "name": null,
+      "available": true,
+      "default_name": ""
     }
   },
   "onboard_done": true

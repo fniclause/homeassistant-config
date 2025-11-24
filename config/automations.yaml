@@ -109,11 +109,3 @@
       message: Il va pleuvoir entre 8h et 20h aujourd'hui.
     action: notify.mobile_app_portable
   mode: single
-- id: '1763896475700'
-  alias: Music
-  description: ''
-  use_blueprint:
-    path: music_assistant_jukebox/jukebox_controller.yaml
-    input:
-      media_player: media_player.la_boite_concept
-      default_playlist: Titres likés
