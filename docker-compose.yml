@@ -12,6 +12,14 @@ services:
       - /dev/ttyUSB0:/dev/ttyUSB0
       - /dev/ttyACM0:/dev/ttyACM0
 
+  music-assistant:
+    image: ghcr.io/music-assistant/server:latest
+    container_name: music-assistant
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./music_assistant:/data
+
   tailscale:
     image: tailscale/tailscale:stable
     container_name: tailscale

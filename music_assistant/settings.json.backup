@@ -1,0 +1,143 @@
+{
+  "server_id": "e63deababa2f45e4897526a3fff32eae",
+  "providers": {
+    "fanarttv": {
+      "values": {},
+      "type": "metadata",
+      "domain": "fanarttv",
+      "instance_id": "fanarttv",
+      "enabled": true,
+      "name": "fanart.tv",
+      "last_error": null
+    },
+    "player_group": {
+      "values": {},
+      "type": "player",
+      "domain": "player_group",
+      "instance_id": "player_group",
+      "enabled": true,
+      "name": "Playergroup",
+      "last_error": null
+    },
+    "builtin": {
+      "values": {},
+      "type": "music",
+      "domain": "builtin",
+      "instance_id": "builtin",
+      "enabled": true,
+      "name": "Music Assistant",
+      "last_error": null
+    },
+    "lrclib": {
+      "values": {},
+      "type": "metadata",
+      "domain": "lrclib",
+      "instance_id": "lrclib",
+      "enabled": true,
+      "name": "LRCLIB",
+      "last_error": null
+    },
+    "musicbrainz": {
+      "values": {},
+      "type": "metadata",
+      "domain": "musicbrainz",
+      "instance_id": "musicbrainz",
+      "enabled": true,
+      "name": "MusicBrainz",
+      "last_error": null
+    },
+    "theaudiodb": {
+      "values": {},
+      "type": "metadata",
+      "domain": "theaudiodb",
+      "instance_id": "theaudiodb",
+      "enabled": true,
+      "name": "The Audio DB",
+      "last_error": null
+    },
+    "builtin_player": {
+      "values": {},
+      "type": "player",
+      "domain": "builtin_player",
+      "instance_id": "builtin_player",
+      "enabled": true,
+      "name": "Music Assistant",
+      "last_error": null
+    },
+    "spotify--QN9Bo9be": {
+      "values": {
+        "refresh_token": "_encrypted_gAAAAABpIyvfLf0U9gOlsoc2bzOiyJef9bswXVpDNo8xVaQrDb18Lc81QQDce9ALmCsRdyXfuYNYCCg6aD9o-ZX7nufAZtRB4HL4_caBfD9kf9wGNk010slq_OyViXhz8wZYqs5x9AmybzI0kDMciOrGt1SORdTDXAXNfB5hPJZQAHVgT54Q1YCWo0IHIEggJOOIGV1BcRMk1MYzddZFqEh8H3JhuIjrqmkzZA3iRt5JAhRPlgtHOnVgYvPCAMNM3CEoL63CqELD"
+      },
+      "type": "music",
+      "domain": "spotify",
+      "instance_id": "spotify--QN9Bo9be",
+      "enabled": true,
+      "name": null,
+      "last_error": null
+    },
+    "chromecast": {
+      "values": {},
+      "type": "player",
+      "domain": "chromecast",
+      "instance_id": "chromecast",
+      "enabled": true,
+      "name": null,
+      "last_error": null
+    }
+  },
+  "core": {
+    "metadata": {
+      "values": {
+        "language": "fr_FR"
+      },
+      "domain": "metadata",
+      "last_error": null
+    }
+  },
+  "players": {
+    "ma_gsd228ylbf": {
+      "values": {},
+      "provider": "builtin_player",
+      "player_id": "ma_gsd228ylbf",
+      "enabled": true,
+      "name": null,
+      "available": true,
+      "default_name": ""
+    },
+    "9d52d63d-500c-3b47-6e03-0ca6aadae9fc": {
+      "values": {},
+      "provider": "chromecast",
+      "player_id": "9d52d63d-500c-3b47-6e03-0ca6aadae9fc",
+      "enabled": true,
+      "name": null,
+      "available": false,
+      "default_name": "Android TV"
+    },
+    "ebd636b0-1e3e-7304-472e-7bd074202c0d": {
+      "values": {},
+      "provider": "chromecast",
+      "player_id": "ebd636b0-1e3e-7304-472e-7bd074202c0d",
+      "enabled": true,
+      "name": null,
+      "available": true,
+      "default_name": "La Boîte concept"
+    },
+    "ugp_re7fxsxi": {
+      "values": {
+        "group_members": [
+          "ebd636b0-1e3e-7304-472e-7bd074202c0d",
+          "ma_gsd228ylbf"
+        ],
+        "group_type": "universal",
+        "dynamic_members": false
+      },
+      "provider": "player_group",
+      "player_id": "ugp_re7fxsxi",
+      "enabled": true,
+      "name": null,
+      "available": true,
+      "default_name": "Salon"
+    }
+  },
+  "onboard_done": true
+}
