@@ -66,7 +66,7 @@
     },
     "spotify--QN9Bo9be": {
       "values": {
-        "refresh_token": "_encrypted_gAAAAABpTPiri0NSjVk8HKtpv9x9vDAXXFVIyZqD9u1zS8vHUfDwuK3bV8ONbA8kpRqpR7aA7XHvX3V5aB6x4mC47tuyeEA4AnM32J2ePOm5y90JlQRyv-y9G8t0AEWnmLnayeXE_-NiBRIZ2FVj8tib02-frCD4PUfmgFSmXVBVUW399I0ffZ7BWOA7TD7iE11A7bwgOqVZpmDms-nPI-HYL44wUUUH0zkEgb8r9ggIwwCZjhua57Ulfum1Unno8vTY4pYWOgoO"
+        "refresh_token": "_encrypted_gAAAAABpTVVZf1j4Xoi_y0uGdX0wEdxbDe0PvSOTw1QJQgxgWoNlQqb7AGbv-vqFBPEpawN43sbF1ogw9BRJ6W6ebog0qq29mAZUrZpzfFcsFAarwVrPya_ANsPBLOe2soxl_knAaIJ25QLiOQLEmUUGuz70rmVrbT9pXV27r8geGbIW92ON5i8-X1_jSZvAUmDCRCgLR7C3GewKI9YtyunPr0paWlEHCznAlk29xckfy-TXAcXNucmO0NsmlZXWsoO7CpHlCYaB"
       },
       "type": "music",
       "domain": "spotify",
@@ -120,7 +120,7 @@
       "enabled": true,
       "name": null,
       "available": true,
-      "default_name": "La Boîte concept"
+      "default_name": ""
     },
     "ma_bzuzytzhap": {
       "values": {},

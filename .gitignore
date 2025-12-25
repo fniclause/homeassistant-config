@@ -36,3 +36,5 @@ config/__pycache__/
 
 # ---- tailscale file ----
 tailscale/
+
+.env*

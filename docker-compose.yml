@@ -39,3 +39,57 @@ services:
     #docker compose up -d tailscale
     #docker exec -it tailscale tailscale up --advertise-routes=192.168.1.0/24 --advertise-exit-node --accept-dns=false
     #Il te donne un lien https://login.tailscale.com/a/XXXX
+
+  transmission:
+    image: lscr.io/linuxserver/transmission
+    container_name: transmission
+    network_mode: "service:gluetun"
+    depends_on:
+      - gluetun
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+    volumes:
+      - /mnt/downloads/transmission:/downloads
+      - ./config/transmission:/config
+    restart: unless-stopped
+
+  soulseek:
+    image: realies/soulseek
+    container_name: soulseek
+    network_mode: "service:gluetun"
+    depends_on:
+      - gluetun
+    volumes:
+      - /mnt/downloads/soulseek:/data
+    environment:
+      - PUID=1000
+      - PGID=1000
+    restart: unless-stopped
+
+  gluetun:
+    image: qmcgaw/gluetun
+    container_name: gluetun
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    env_file:
+      - .env.vpn
+    ports:
+      - "9091:9091"
+    environment:
+      - VPN_SERVICE_PROVIDER=protonvpn
+      - SERVER_COUNTRIES=Netherlands,Switzerland
+      - DNS_ADDRESS=1.1.1.1
+      - DOT=off
+      - PORT_FORWARD_ONLY=on
+      - OPENVPN_PROTOCOL=udp
+    networks:
+      - vpn_net
+    restart: unless-stopped
+
+networks:
+  vpn_net:
+    name: vpn_net
