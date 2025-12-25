@@ -66,14 +66,14 @@
     },
     "spotify--QN9Bo9be": {
       "values": {
-        "refresh_token": "_encrypted_gAAAAABpJG2aSJyUKfsnDRTIegqyL266a6I7lz-TBe6PNP4mzte5MwAkl0IP6sbxJoDnGgPFas1eWPbccnYdWv90LPQofyU6bGQfI5AsbSjMFkpBk3GzCS7rpw9ZMFopHgxmy714eDf0RpoeOgVia6VzxVyFvVO9AJiSLbZBdmhmGXBGq0s6M5cmyJC5Y5nxoXGc4dZnfgrpULqVqvbrR5RcUfZMZu_Ew9b20IRnLgItzCQtCtZuoKciMTi3IHly6-k6jin0OXJY"
+        "refresh_token": "_encrypted_gAAAAABpS6crRU5AXU_s4h_MajId_VGy5Fz1HwvikstZDpwUd0rkZLl-3p_caz0gB9QR0mj0bQM4BOMmaWwZ0LIVsdodQH0gdtELCuwviGZ2YRlZxg9M67Y4YP7Pprurazk7U-PflS9tINaaOQnZPkFpzz5azXk6ruex2w5GENVidLCWaE5qgQOs2vRklodaemzSyW53hGb9xh2qss-tV0TH6qKgJM2FZp9f0eN8nOJfpGTCEU6_TM0GZ4s7D86amW8ySla56SGT"
       },
       "type": "music",
       "domain": "spotify",
       "instance_id": "spotify--QN9Bo9be",
       "enabled": true,
       "name": null,
-      "last_error": "Configuration is invalid"
+      "last_error": null
     },
     "chromecast": {
       "values": {},
@@ -120,23 +120,7 @@
       "enabled": true,
       "name": null,
       "available": true,
-      "default_name": ""
-    },
-    "ugp_re7fxsxi": {
-      "values": {
-        "group_members": [
-          "ebd636b0-1e3e-7304-472e-7bd074202c0d",
-          "ma_gsd228ylbf"
-        ],
-        "group_type": "universal",
-        "dynamic_members": false
-      },
-      "provider": "player_group",
-      "player_id": "ugp_re7fxsxi",
-      "enabled": true,
-      "name": null,
-      "available": false,
-      "default_name": "Salon"
+      "default_name": "La Boîte concept"
     },
     "ma_bzuzytzhap": {
       "values": {},

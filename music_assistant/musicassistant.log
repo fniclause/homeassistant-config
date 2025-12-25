@@ -1,69 +1,677 @@
-2025-11-24 14:30:20.932 INFO (MainThread) [music_assistant] Starting Music Assistant Server (e63deababa2f45e4897526a3fff32eae) version 2.6.3 - HA add-on: False - Safe mode: False
-2025-11-24 14:30:20.943 INFO (MainThread) [music_assistant.cache] Initializing cache controller...
-2025-11-24 14:30:21.236 INFO (MainThread) [ffmpeg] Detected ffmpeg version 7.1.1 with libsoxr support
-2025-11-24 14:30:21.258 INFO (MainThread) [music_assistant.streams] 
+2025-12-15 20:41:15.317 INFO (MainThread) [music_assistant] Starting Music Assistant Server (e63deababa2f45e4897526a3fff32eae) version 2.6.3 - HA add-on: False - Safe mode: False
+2025-12-15 20:41:15.330 INFO (MainThread) [music_assistant.cache] Initializing cache controller...
+2025-12-15 20:41:15.558 INFO (MainThread) [ffmpeg] Detected ffmpeg version 7.1.1 with libsoxr support
+2025-12-15 20:41:15.577 INFO (MainThread) [music_assistant.streams] 
 
 ################################################################################
-Starting streamserver on  192.168.1.43:8097
+Starting streamserver on  192.168.1.43:8098
 This is the IP address that is communicated to players.
 If this is incorrect, audio will not play!
 See the documentation how to configure the publish IP for the Streamserver
 in Settings --> Core modules --> Streamserver
 ################################################################################
 
-2025-11-24 14:30:21.298 INFO (MainThread) [music_assistant.music] Using a sync interval of 720 minutes.
-2025-11-24 14:30:21.328 INFO (MainThread) [music_assistant.webserver] Starting webserver on  0.0.0.0:8095 - base url: http://192.168.1.43:8095
+2025-12-15 20:41:15.607 INFO (MainThread) [music_assistant.music] Using a sync interval of 720 minutes.
+2025-12-15 20:41:15.633 INFO (MainThread) [music_assistant.webserver] Starting webserver on  0.0.0.0:8095 - base url: http://192.168.1.43:8095
 #
 
-2025-11-24 14:30:22.658 INFO (MainThread) [music_assistant] Loaded player provider Playergroup
-2025-11-24 14:30:22.658 INFO (MainThread) [music_assistant] Loaded player provider Music Assistant
-2025-11-24 14:30:22.659 INFO (MainThread) [music_assistant] Loaded metadata provider LRCLIB
-2025-11-24 14:30:22.659 INFO (MainThread) [music_assistant] Loaded metadata provider MusicBrainz
-2025-11-24 14:30:22.659 INFO (MainThread) [music_assistant] Loaded music provider Music Assistant
-2025-11-24 14:30:22.660 INFO (MainThread) [music_assistant] Loaded metadata provider fanart.tv
-2025-11-24 14:30:22.661 INFO (MainThread) [music_assistant.players] Player registered: ugp_re7fxsxi/Salon
-2025-11-24 14:30:22.661 INFO (MainThread) [music_assistant] Loaded metadata provider The Audio DB
-2025-11-24 14:30:22.669 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:30:22.690 INFO (MainThread) [music_assistant] Loaded player provider Chromecast
-2025-11-24 14:30:22.977 INFO (MainThread) [music_assistant.players] Player registered: 9d52d63d-500c-3b47-6e03-0ca6aadae9fc/Android TV
-2025-11-24 14:30:23.065 INFO (MainThread) [music_assistant.players] Player registered: ebd636b0-1e3e-7304-472e-7bd074202c0d/La Boîte concept
-2025-11-24 14:30:32.675 WARNING (MainThread) [music_assistant.webserver] Received unhandled GET request to // from 192.168.1.161
-headers: <CIMultiDictProxy('Host': '192.168.1.43:8095', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,es;q=0.6,it;q=0.5')>
+2025-12-15 20:41:16.837 INFO (MainThread) [music_assistant] Loaded metadata provider fanart.tv
+2025-12-15 20:41:16.838 INFO (MainThread) [music_assistant] Loaded metadata provider MusicBrainz
+2025-12-15 20:41:16.838 INFO (MainThread) [music_assistant] Loaded player provider Music Assistant
+2025-12-15 20:41:16.839 INFO (MainThread) [music_assistant] Loaded metadata provider LRCLIB
+2025-12-15 20:41:16.839 INFO (MainThread) [music_assistant] Loaded music provider Music Assistant
+2025-12-15 20:41:16.841 INFO (MainThread) [music_assistant] Loaded player provider Playergroup
+2025-12-15 20:41:16.842 INFO (MainThread) [music_assistant] Loaded metadata provider The Audio DB
+2025-12-15 20:41:16.865 INFO (MainThread) [music_assistant] Loaded player provider Chromecast
+2025-12-15 20:41:17.227 INFO (MainThread) [music_assistant.players] Player registered: 9d52d63d-500c-3b47-6e03-0ca6aadae9fc/Android TV
+2025-12-15 20:41:17.336 INFO (MainThread) [music_assistant.players] Player registered: ebd636b0-1e3e-7304-472e-7bd074202c0d/La Boîte concept
+2025-12-15 20:41:18.231 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-15 20:41:18.232 INFO (MainThread) [music_assistant.spotify] Retrying in 6 seconds...
+2025-12-15 20:41:24.263 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-15 20:41:24.263 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-15 20:41:25.329 INFO (MainThread) [music_assistant.spotify] Successfully logged in to Spotify as 1132820131
+2025-12-15 20:41:25.330 INFO (MainThread) [music_assistant] Loaded music provider Spotify
+2025-12-15 20:41:59.173 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
+2025-12-15 20:42:37.512 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album &
+2025-12-15 20:42:45.384 ERROR (MainThread) [music_assistant.webserver] Error handling message: players/cmd/seek: Queue La Boîte concept has no item(s) loaded.
+2025-12-15 20:43:41.075 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album &
+2025-12-15 20:43:42.890 WARNING (MainThread) [music_assistant.spotify] No audio received from librespot within timeout - will retry once
+2025-12-15 20:44:36.696 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
+2025-12-15 20:44:46.631 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
+2025-12-15 20:44:46.762 WARNING (MainThread) [music_assistant.spotify] No audio received from librespot within timeout - will retry once
+2025-12-15 20:45:16.769 ERROR (MainThread) [ffmpeg.96] Stream error: No audio received from librespot within timeout
+2025-12-15 20:45:16.805 WARNING (MainThread) [ffmpeg.96] [in#0 @ 0x79173ab51440] Error opening input: Invalid data found when processing input
+Error opening input file -.
+Error opening input files: Invalid data found when processing input
+2025-12-15 20:45:16.805 ERROR (MainThread) [music_assistant.audio.cache] Error while creating cache for spotify://track/3e7oQXPMhq0I06Y2ytMBmu: FFMpeg error 183
+2025-12-15 20:45:16.807 WARNING (MainThread) [music_assistant.player_queues] Skipping unplayable item Julien Doré - La fièvre (library://track/68)
+2025-12-15 20:45:26.830 WARNING (MainThread) [music_assistant.spotify] No audio received from librespot within timeout - will retry once
+2025-12-15 20:45:56.838 ERROR (MainThread) [ffmpeg.115] Stream error: No audio received from librespot within timeout
+2025-12-15 20:45:56.840 WARNING (MainThread) [ffmpeg.115] [in#0 @ 0x784b27b3b440] Error opening input: Invalid data found when processing input
+Error opening input file -.
+Error opening input files: Invalid data found when processing input
+2025-12-15 20:45:56.840 ERROR (MainThread) [music_assistant.audio.cache] Error while creating cache for spotify://track/7clAUNbgnvUueMSRbOmyb0: FFMpeg error 183
+2025-12-15 20:46:41.194 ERROR (MainThread) [music_assistant] Error doing task: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/process.py", line 142, in read
+    return await self.proc.stdout.read(n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
 
-2025-11-24 14:30:43.908 WARNING (MainThread) [music_assistant.webserver] Received unhandled GET request to // from 192.168.1.161
-headers: <CIMultiDictProxy('Host': '192.168.1.43:8095', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,es;q=0.6,it;q=0.5')>
+The above exception was the direct cause of the following exception:
 
-2025-11-24 14:32:22.675 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:33:46.049 INFO (MainThread) [music_assistant.players] Player registered: ma_bzuzytzhap/This Device
-2025-11-24 14:34:22.680 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:34:45.414 INFO (MainThread) [music_assistant.players] Player registered: ma_tgjrsq64jm/This Device
-2025-11-24 14:35:24.336 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album &
-2025-11-24 14:35:24.344 ERROR (MainThread) [music_assistant.webserver] Error handling message: player_queues/play_media: No playable items found
-2025-11-24 14:35:42.673 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
-2025-11-24 14:35:42.684 ERROR (MainThread) [music_assistant.webserver] Error handling message: player_queues/play_media: No playable items found
-2025-11-24 14:36:22.686 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:36:33.627 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album &
-2025-11-24 14:36:33.632 ERROR (MainThread) [music_assistant.webserver] Error handling message: player_queues/play_media: No playable items found
-2025-11-24 14:36:41.483 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album BLIZZARD
-2025-11-24 14:36:41.488 ERROR (MainThread) [music_assistant.webserver] Error handling message: player_queues/play_media: No playable items found
-2025-11-24 14:36:48.260 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album BLIZZARD
-2025-11-24 14:36:48.264 ERROR (MainThread) [music_assistant.webserver] Error handling message: player_queues/play_media: No playable items found
-2025-11-24 14:37:14.893 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-24 14:37:14.893 INFO (MainThread) [music_assistant.spotify] Retrying in 9 seconds...
-2025-11-24 14:37:23.925 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-24 14:37:23.926 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-24 14:37:25.004 INFO (MainThread) [music_assistant.spotify] Successfully logged in to Spotify as 1132820131
-2025-11-24 14:37:25.004 INFO (MainThread) [music_assistant] Loaded music provider Spotify
-2025-11-24 14:37:41.430 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album BLIZZARD
-2025-11-24 14:37:41.529 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-24 14:37:41.529 INFO (MainThread) [music_assistant.spotify] Retrying in 13 seconds...
-2025-11-24 14:37:50.290 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album LØVE
-2025-11-24 14:37:50.328 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-24 14:37:50.328 INFO (MainThread) [music_assistant.spotify] Retrying in 4 seconds...
-2025-11-24 14:37:54.359 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-24 14:37:54.359 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-24 14:37:54.561 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
-2025-11-24 14:37:54.561 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
-2025-11-24 14:37:59.319 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album BLIZZARD
-2025-11-24 14:39:24.459 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
-2025-11-24 14:39:24.459 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 66, in get_audio_stream
+    chunk = await asyncio.wait_for(librespot_proc.read(64000), timeout=10 * attempt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 506, in wait_for
+    async with timeouts.timeout(timeout):
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/timeouts.py", line 116, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/ffmpeg.py", line 172, in _feed_stdin
+    async for chunk in self.audio_input:
+    ...<2 lines>...
+        await self.write(chunk)
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/provider.py", line 394, in get_audio_stream
+    async for chunk in self.streamer.get_audio_stream(streamdetails, seek_position):
+        yield chunk
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 73, in get_audio_stream
+    raise AudioError(err_mesg)
+music_assistant_models.errors.AudioError: No audio received from librespot within timeout
+2025-12-15 20:47:02.576 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
+2025-12-15 20:47:29.875 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album BLIZZARD
+2025-12-15 20:47:33.290 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-15 20:47:33.290 INFO (MainThread) [music_assistant.spotify] Retrying in 22 seconds...
+2025-12-15 20:48:05.138 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
+2025-12-15 20:50:08.290 ERROR (MainThread) [music_assistant] Error doing task: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/process.py", line 142, in read
+    return await self.proc.stdout.read(n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 66, in get_audio_stream
+    chunk = await asyncio.wait_for(librespot_proc.read(64000), timeout=10 * attempt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 506, in wait_for
+    async with timeouts.timeout(timeout):
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/timeouts.py", line 116, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/ffmpeg.py", line 172, in _feed_stdin
+    async for chunk in self.audio_input:
+    ...<2 lines>...
+        await self.write(chunk)
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/provider.py", line 394, in get_audio_stream
+    async for chunk in self.streamer.get_audio_stream(streamdetails, seek_position):
+        yield chunk
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 73, in get_audio_stream
+    raise AudioError(err_mesg)
+music_assistant_models.errors.AudioError: No audio received from librespot within timeout
+2025-12-15 20:53:17.118 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for artist Charles Aznavour
+2025-12-15 20:53:17.227 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-15 20:53:17.227 INFO (MainThread) [music_assistant.spotify] Retrying in 7 seconds...
+2025-12-15 20:53:17.475 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-15 20:53:17.476 INFO (MainThread) [music_assistant.spotify] Retrying in 7 seconds...
+2025-12-15 20:53:24.259 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-15 20:53:24.260 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-15 20:53:24.508 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-15 20:53:24.508 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-15 20:53:25.003 INFO (MainThread) [music_assistant.player_queues] Fetching radio tracks for queue La Boîte concept based on: Charles Aznavour
+2025-12-15 20:53:35.601 WARNING (MainThread) [music_assistant.spotify] No audio received from librespot within timeout - will retry once
+2025-12-15 20:53:36.707 WARNING (MainThread) [music_assistant.spotify] No audio received from librespot within timeout - will retry once
+2025-12-15 20:54:05.607 ERROR (MainThread) [ffmpeg.242] Stream error: No audio received from librespot within timeout
+2025-12-15 20:54:05.644 WARNING (MainThread) [ffmpeg.242] [in#0 @ 0x76658b17e440] Error opening input: Invalid data found when processing input
+Error opening input file -.
+Error opening input files: Invalid data found when processing input
+2025-12-15 20:54:05.644 ERROR (MainThread) [music_assistant.audio.cache] Error while creating cache for spotify://track/66TDFKCZpMRfLcgJpa15xq: FFMpeg error 183
+2025-12-15 20:54:10.806 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
+2025-12-15 20:54:20.849 WARNING (MainThread) [music_assistant.spotify] No audio received from librespot within timeout - will retry once
+2025-12-15 20:56:22.860 INFO (MainThread) [music_assistant.player_queues] Fetching radio tracks for queue La Boîte concept based on: Charles Aznavour
+2025-12-15 20:56:23.241 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-15 20:56:23.242 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-15 20:56:24.273 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-15 20:56:24.273 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-15 20:56:36.369 WARNING (MainThread) [music_assistant.spotify] No audio received from librespot within timeout - will retry once
+2025-12-15 20:57:06.376 ERROR (MainThread) [ffmpeg.360] Stream error: No audio received from librespot within timeout
+2025-12-15 20:57:06.401 WARNING (MainThread) [ffmpeg.360] [in#0 @ 0x7f6b1069f440] Error opening input: Invalid data found when processing input
+Error opening input file -.
+Error opening input files: Invalid data found when processing input
+2025-12-15 20:57:06.401 ERROR (MainThread) [music_assistant.audio.cache] Error while creating cache for spotify://track/1WvvmEowf7hiz5EnyAwtTj: FFMpeg error 183
+2025-12-15 20:57:06.402 WARNING (MainThread) [music_assistant.player_queues] Skipping unplayable item Charles Aznavour - La bohème (spotify://track/1WvvmEowf7hiz5EnyAwtTj)
+2025-12-15 20:59:51.902 WARNING (MainThread) [music_assistant.player_queues] Skipping unplayable item Charles Aznavour - La bohème (spotify://track/1WvvmEowf7hiz5EnyAwtTj)
+2025-12-15 21:00:01.690 WARNING (MainThread) [music_assistant.player_queues] Skipping unplayable item Charles Aznavour - La bohème (spotify://track/1WvvmEowf7hiz5EnyAwtTj)
+2025-12-15 21:00:02.223 WARNING (MainThread) [music_assistant.player_queues] Skipping unplayable item Charles Aznavour - La bohème (spotify://track/1WvvmEowf7hiz5EnyAwtTj)
+2025-12-15 21:00:02.787 ERROR (MainThread) [music_assistant] Error doing task: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/process.py", line 142, in read
+    return await self.proc.stdout.read(n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 66, in get_audio_stream
+    chunk = await asyncio.wait_for(librespot_proc.read(64000), timeout=10 * attempt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 506, in wait_for
+    async with timeouts.timeout(timeout):
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/timeouts.py", line 116, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/ffmpeg.py", line 172, in _feed_stdin
+    async for chunk in self.audio_input:
+    ...<2 lines>...
+        await self.write(chunk)
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/provider.py", line 394, in get_audio_stream
+    async for chunk in self.streamer.get_audio_stream(streamdetails, seek_position):
+        yield chunk
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 73, in get_audio_stream
+    raise AudioError(err_mesg)
+music_assistant_models.errors.AudioError: No audio received from librespot within timeout
+2025-12-15 21:06:01.378 WARNING (MainThread) [music_assistant.spotify] No audio received from librespot within timeout - will retry once
+2025-12-15 21:06:31.384 ERROR (MainThread) [ffmpeg.587] Stream error: No audio received from librespot within timeout
+2025-12-15 21:06:31.417 WARNING (MainThread) [ffmpeg.587] [in#0 @ 0x74cf67dbc440] Error opening input: Invalid data found when processing input
+Error opening input file -.
+Error opening input files: Invalid data found when processing input
+2025-12-15 21:06:31.417 ERROR (MainThread) [music_assistant.audio.cache] Error while creating cache for spotify://track/2XOxcJrlD0RZ3pGEtel8lH: FFMpeg error 183
+2025-12-15 21:06:31.419 WARNING (MainThread) [music_assistant.player_queues] Skipping unplayable item Jeane Manson - Avant de nous dire adieu (spotify://track/2XOxcJrlD0RZ3pGEtel8lH)
+2025-12-15 21:06:41.441 WARNING (MainThread) [music_assistant.spotify] No audio received from librespot within timeout - will retry once
+2025-12-15 21:07:11.447 ERROR (MainThread) [ffmpeg.606] Stream error: No audio received from librespot within timeout
+2025-12-15 21:07:11.478 WARNING (MainThread) [ffmpeg.606] [in#0 @ 0x72b79a857440] Error opening input: Invalid data found when processing input
+Error opening input file -.
+Error opening input files: Invalid data found when processing input
+2025-12-15 21:07:11.479 ERROR (MainThread) [music_assistant.audio.cache] Error while creating cache for spotify://track/78y4PSmxPlIx2IIFu2a4nF: FFMpeg error 183
+2025-12-15 21:07:11.481 WARNING (MainThread) [music_assistant.player_queues] Skipping unplayable item Charles Aznavour - Il te suffisait que je t'aime (spotify://track/78y4PSmxPlIx2IIFu2a4nF)
+2025-12-15 21:20:20.896 ERROR (MainThread) [music_assistant] Error doing task: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/process.py", line 142, in read
+    return await self.proc.stdout.read(n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 66, in get_audio_stream
+    chunk = await asyncio.wait_for(librespot_proc.read(64000), timeout=10 * attempt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 506, in wait_for
+    async with timeouts.timeout(timeout):
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/timeouts.py", line 116, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/ffmpeg.py", line 172, in _feed_stdin
+    async for chunk in self.audio_input:
+    ...<2 lines>...
+        await self.write(chunk)
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/provider.py", line 394, in get_audio_stream
+    async for chunk in self.streamer.get_audio_stream(streamdetails, seek_position):
+        yield chunk
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 73, in get_audio_stream
+    raise AudioError(err_mesg)
+music_assistant_models.errors.AudioError: No audio received from librespot within timeout
+2025-12-15 21:20:20.902 ERROR (MainThread) [music_assistant] Error doing task: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/process.py", line 142, in read
+    return await self.proc.stdout.read(n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 66, in get_audio_stream
+    chunk = await asyncio.wait_for(librespot_proc.read(64000), timeout=10 * attempt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 506, in wait_for
+    async with timeouts.timeout(timeout):
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/timeouts.py", line 116, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/ffmpeg.py", line 172, in _feed_stdin
+    async for chunk in self.audio_input:
+    ...<2 lines>...
+        await self.write(chunk)
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/provider.py", line 394, in get_audio_stream
+    async for chunk in self.streamer.get_audio_stream(streamdetails, seek_position):
+        yield chunk
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 73, in get_audio_stream
+    raise AudioError(err_mesg)
+music_assistant_models.errors.AudioError: No audio received from librespot within timeout
+2025-12-16 01:59:17.277 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
+2025-12-16 02:04:52.787 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Error reading from socket: socket connection broken
+2025-12-16 02:04:52.799 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-16 08:41:16.154 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:41:16.154 INFO (MainThread) [music_assistant.spotify] Retrying in 8 seconds...
+2025-12-16 08:41:24.186 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-16 08:41:24.187 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:41:25.580 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-16 08:41:25.607 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:41:25.607 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-16 08:41:53.716 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-16 08:41:53.716 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:41:55.054 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-16 08:41:55.060 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-16 08:41:57.088 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:41:57.088 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-16 08:42:24.176 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-16 08:42:24.176 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:42:25.495 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-16 08:42:25.645 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:42:25.645 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-16 08:42:26.187 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-16 08:42:53.732 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-16 08:42:53.732 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:42:55.149 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-16 08:42:55.272 ERROR (ThreadPoolExecutor-0_14) [music_assistant] Error doing task: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/process.py", line 142, in read
+    return await self.proc.stdout.read(n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/local/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 66, in get_audio_stream
+    chunk = await asyncio.wait_for(librespot_proc.read(64000), timeout=10 * attempt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/tasks.py", line 506, in wait_for
+    async with timeouts.timeout(timeout):
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/timeouts.py", line 116, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/helpers/ffmpeg.py", line 172, in _feed_stdin
+    async for chunk in self.audio_input:
+    ...<2 lines>...
+        await self.write(chunk)
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/provider.py", line 394, in get_audio_stream
+    async for chunk in self.streamer.get_audio_stream(streamdetails, seek_position):
+        yield chunk
+  File "/app/venv/lib/python3.13/site-packages/music_assistant/providers/spotify/streaming.py", line 73, in get_audio_stream
+    raise AudioError(err_mesg)
+music_assistant_models.errors.AudioError: No audio received from librespot within timeout
+2025-12-16 08:42:57.400 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:42:57.400 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-16 08:43:24.503 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-16 08:43:24.503 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:43:25.534 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
+2025-12-16 08:43:25.535 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-16 08:43:57.006 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:43:57.006 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-16 08:44:24.114 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-16 08:44:24.114 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:44:27.443 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:44:27.443 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-16 08:44:54.550 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-16 08:44:54.550 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:44:55.581 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
+2025-12-16 08:44:55.581 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-16 08:45:27.284 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:45:27.284 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-16 08:45:54.385 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-16 08:45:54.385 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:45:55.536 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:45:55.536 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-16 08:46:27.015 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:46:27.015 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-16 08:46:54.122 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-16 08:46:54.123 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:46:55.510 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:46:55.511 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-16 08:47:24.599 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-16 08:47:24.599 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:47:25.630 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
+2025-12-16 08:47:25.631 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-16 08:47:53.721 INFO (MainThread) [music_assistant.spotify] Attempt 4/5 failed: Spotify Rate Limiter
+2025-12-16 08:47:53.721 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:47:56.879 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-16 08:47:56.879 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-16 08:48:23.988 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-16 08:48:23.988 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-16 08:48:25.262 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-17 01:03:31.546 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
+2025-12-17 03:03:42.096 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Error reading from socket: socket connection broken
+2025-12-17 03:03:42.106 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-17 08:41:16.732 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-17 08:41:16.732 INFO (MainThread) [music_assistant.spotify] Retrying in 7 seconds...
+2025-12-17 08:41:23.762 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-17 08:41:23.763 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-17 08:41:25.056 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-17 08:41:25.308 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-17 08:41:25.313 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-17 08:41:27.087 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-17 08:41:27.087 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-17 08:41:54.196 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-17 08:41:54.196 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-17 08:41:55.662 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-17 08:41:56.295 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-17 08:41:57.475 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-17 08:41:57.475 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-17 08:42:24.582 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-17 08:42:24.582 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-17 08:42:25.614 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
+2025-12-17 08:42:25.614 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-17 08:42:53.705 INFO (MainThread) [music_assistant.spotify] Attempt 4/5 failed: Spotify Rate Limiter
+2025-12-17 08:42:53.706 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-17 08:42:55.269 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-17 08:42:57.358 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-17 08:42:57.359 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-17 08:43:24.454 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-17 08:43:24.454 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-17 08:43:25.487 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
+2025-12-17 08:43:25.487 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-17 08:43:54.595 INFO (MainThread) [music_assistant.spotify] Attempt 4/5 failed: Spotify Rate Limiter
+2025-12-17 08:43:54.595 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-17 08:43:55.626 INFO (MainThread) [music_assistant.spotify] Attempt 5/5 failed: Spotify Rate Limiter
+2025-12-17 08:43:55.627 WARNING (MainThread) [music_assistant.music] Sync task for Spotify completed with errors
+2025-12-18 02:16:46.455 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Error reading from socket: socket connection broken
+2025-12-18 02:16:46.464 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-18 08:41:16.149 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:41:16.150 INFO (MainThread) [music_assistant.spotify] Retrying in 8 seconds...
+2025-12-18 08:41:24.181 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:41:24.181 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:41:25.640 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-18 08:41:25.667 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:41:25.667 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-18 08:41:53.764 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:41:53.764 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:41:55.306 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-18 08:41:55.313 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-18 08:41:57.346 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:41:57.346 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-18 08:42:24.451 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:42:24.451 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:42:25.751 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-18 08:42:25.921 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:42:25.921 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-18 08:42:26.405 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-18 08:42:54.009 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:42:54.009 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:42:55.326 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-18 08:42:57.421 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:42:57.422 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-18 08:43:24.529 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:43:24.529 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:43:25.558 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
+2025-12-18 08:43:25.558 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-18 08:43:57.252 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:43:57.252 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-18 08:44:24.344 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:44:24.345 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:44:26.186 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:44:26.186 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-18 08:44:54.289 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:44:54.289 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:44:55.530 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:44:55.530 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-18 08:45:26.785 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:45:26.785 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-18 08:45:53.876 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:45:53.876 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:45:57.153 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:45:57.153 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-18 08:46:24.242 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:46:24.242 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:46:25.610 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:46:25.610 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-18 08:46:53.713 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:46:53.713 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:46:57.338 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:46:57.338 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-18 08:47:24.445 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:47:24.445 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:47:25.627 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:47:25.627 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-18 08:47:53.707 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:47:53.708 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:47:57.063 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:47:57.063 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-18 08:48:24.150 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:48:24.150 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:48:25.530 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:48:25.530 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-18 08:48:56.744 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-18 08:48:56.745 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-18 08:49:23.871 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-18 08:49:23.871 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-18 08:49:25.181 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-18 17:46:11.985 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
+2025-12-18 17:46:12.457 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-18 17:47:26.998 WARNING (MainThread) [zeroconf] Error with socket 10 (('0.0.0.0', 5353))): [Errno 101] Network unreachable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/asyncio/selector_events.py", line 1269, in sendto
+    self._sock.sendto(data, addr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+OSError: [Errno 101] Network unreachable
+2025-12-18 18:44:30.606 ERROR (MainThread) [music_assistant.webserver] Error handling message: players/cmd/seek: Queue La Boîte concept has no item(s) loaded.
+2025-12-19 01:02:25.438 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
+2025-12-19 01:49:15.700 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Error reading from socket: socket connection broken
+2025-12-19 01:49:15.715 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-19 08:41:16.113 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:41:16.113 INFO (MainThread) [music_assistant.spotify] Retrying in 8 seconds...
+2025-12-19 08:41:24.143 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:41:24.144 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:41:25.453 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-19 08:41:26.001 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-19 08:41:26.007 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-19 08:41:27.483 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:41:27.483 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:41:54.581 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:41:54.581 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:41:55.611 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
+2025-12-19 08:41:55.612 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-19 08:42:23.683 INFO (MainThread) [music_assistant.spotify] Attempt 4/5 failed: Spotify Rate Limiter
+2025-12-19 08:42:23.683 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:42:25.211 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-19 08:42:25.709 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-19 08:42:27.015 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:42:27.016 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:42:54.092 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:42:54.092 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:42:55.426 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-19 08:42:55.519 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:42:55.519 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-19 08:43:27.186 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:43:27.186 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:43:54.261 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:43:54.261 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:43:55.818 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:43:55.819 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-19 08:44:23.911 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:44:23.912 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:44:25.500 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:44:25.501 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-19 08:44:54.580 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:44:54.580 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:44:55.611 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
+2025-12-19 08:44:55.612 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-19 08:45:23.708 INFO (MainThread) [music_assistant.spotify] Attempt 4/5 failed: Spotify Rate Limiter
+2025-12-19 08:45:23.709 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:45:26.938 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:45:26.938 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:45:54.017 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:45:54.018 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:45:55.622 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:45:55.622 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-19 08:46:23.714 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:46:23.714 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:46:26.895 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:46:26.895 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:46:53.987 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:46:53.987 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:46:57.343 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:46:57.343 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:47:24.421 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:47:24.421 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:47:25.691 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:47:25.691 INFO (MainThread) [music_assistant.spotify] Retrying in 28 seconds...
+2025-12-19 08:47:53.768 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:47:53.768 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:47:57.075 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:47:57.075 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:48:24.152 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:48:24.153 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:48:27.427 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:48:27.427 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:48:54.527 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:48:54.527 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:48:55.558 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
+2025-12-19 08:48:55.558 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-19 08:49:27.031 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:49:27.031 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:49:54.106 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:49:54.107 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:49:57.490 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:49:57.490 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:50:24.570 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:50:24.571 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:50:25.601 INFO (MainThread) [music_assistant.spotify] Attempt 3/5 failed: Spotify Rate Limiter
+2025-12-19 08:50:25.602 INFO (MainThread) [music_assistant.spotify] Retrying in 29 seconds...
+2025-12-19 08:50:57.019 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:50:57.019 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:51:24.124 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-19 08:51:24.124 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-19 08:51:27.524 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-19 08:51:27.524 INFO (MainThread) [music_assistant.spotify] Retrying in 27 seconds...
+2025-12-19 08:51:55.220 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-20 02:51:40.024 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.84):8009] Error reading from socket: socket connection broken
+2025-12-20 02:51:40.048 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-20 03:12:43.742 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
+2025-12-20 08:41:16.621 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-20 08:41:17.980 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-20 08:41:17.986 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-20 08:41:21.855 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-20 08:41:22.408 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-20 08:41:23.930 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-20 08:41:51.675 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-20 08:41:51.675 INFO (MainThread) [music_assistant.spotify] Retrying in 2 seconds...
+2025-12-20 08:41:53.707 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-20 08:41:53.707 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-20 08:41:55.406 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-21 03:19:07.427 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
+2025-12-21 03:40:46.294 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Error reading from socket: socket connection broken
+2025-12-21 03:40:46.305 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-21 08:41:16.685 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-21 08:41:17.883 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-21 08:41:17.888 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-21 08:41:21.860 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-21 08:41:22.478 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-21 08:41:23.963 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-21 08:41:55.910 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-22 03:39:30.558 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Error reading from socket: socket connection broken
+2025-12-22 03:39:30.572 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-22 08:41:16.428 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-22 08:41:17.869 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-22 08:41:17.874 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-22 08:41:21.862 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-22 08:41:22.209 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-22 08:41:23.967 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-22 08:43:05.940 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-23 03:10:22.845 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Error reading from socket: socket connection broken
+2025-12-23 03:10:22.857 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-23 08:41:16.420 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-23 08:41:17.954 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-23 08:41:17.959 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-23 08:41:21.839 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-23 08:41:22.249 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-23 08:41:23.927 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-23 08:42:13.983 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-24 02:58:48.091 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Error reading from socket: socket connection broken
+2025-12-24 02:58:48.102 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-24 03:23:23.284 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
+2025-12-24 08:41:16.438 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-24 08:41:17.885 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-24 08:41:17.891 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-24 08:41:21.887 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-24 08:41:22.582 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-24 08:41:24.149 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-24 08:41:47.973 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-25 03:07:22.234 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Error reading from socket: socket connection broken
+2025-12-25 03:07:22.247 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-25 03:49:35.476 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
+2025-12-25 08:41:16.515 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-25 08:41:17.913 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-25 08:41:17.919 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-25 08:41:21.938 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-25 08:41:22.631 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-25 08:41:24.070 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-25 08:41:45.951 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed

@@ -1,7 +1,7 @@
-2025-11-24 14:10:45.946 INFO (MainThread) [music_assistant] Starting Music Assistant Server (e63deababa2f45e4897526a3fff32eae) version 2.6.3 - HA add-on: False - Safe mode: False
-2025-11-24 14:10:45.959 INFO (MainThread) [music_assistant.cache] Initializing cache controller...
-2025-11-24 14:10:46.226 INFO (MainThread) [ffmpeg] Detected ffmpeg version 7.1.1 with libsoxr support
-2025-11-24 14:10:46.241 INFO (MainThread) [music_assistant.streams] 
+2025-12-15 20:15:05.333 INFO (MainThread) [music_assistant] Starting Music Assistant Server (e63deababa2f45e4897526a3fff32eae) version 2.6.3 - HA add-on: False - Safe mode: False
+2025-12-15 20:15:05.345 INFO (MainThread) [music_assistant.cache] Initializing cache controller...
+2025-12-15 20:15:05.552 INFO (MainThread) [ffmpeg] Detected ffmpeg version 7.1.1 with libsoxr support
+2025-12-15 20:15:05.564 INFO (MainThread) [music_assistant.streams] 
 
 ################################################################################
 Starting streamserver on  192.168.1.43:8097
@@ -11,46 +11,38 @@ See the documentation how to configure the publish IP for the Streamserver
 in Settings --> Core modules --> Streamserver
 ################################################################################
 
-2025-11-24 14:10:46.287 INFO (MainThread) [music_assistant.music] Using a sync interval of 720 minutes.
-2025-11-24 14:10:46.313 INFO (MainThread) [music_assistant.webserver] Starting webserver on  0.0.0.0:8095 - base url: http://192.168.1.43:8095
+2025-12-15 20:15:05.612 INFO (MainThread) [music_assistant.music] Using a sync interval of 720 minutes.
+2025-12-15 20:15:05.658 INFO (MainThread) [music_assistant.webserver] Starting webserver on  0.0.0.0:8095 - base url: http://192.168.1.43:8095
 #
 
-2025-11-24 14:10:47.395 INFO (MainThread) [music_assistant] Loaded metadata provider fanart.tv
-2025-11-24 14:10:47.396 INFO (MainThread) [music_assistant] Loaded music provider Music Assistant
-2025-11-24 14:10:47.396 INFO (MainThread) [music_assistant] Loaded metadata provider The Audio DB
-2025-11-24 14:10:47.397 INFO (MainThread) [music_assistant] Loaded player provider Playergroup
-2025-11-24 14:10:47.399 INFO (MainThread) [music_assistant.players] Player registered: ugp_re7fxsxi/Salon
-2025-11-24 14:10:47.400 INFO (MainThread) [music_assistant] Loaded metadata provider LRCLIB
-2025-11-24 14:10:47.400 INFO (MainThread) [music_assistant] Loaded metadata provider MusicBrainz
-2025-11-24 14:10:47.405 INFO (MainThread) [music_assistant] Loaded player provider Music Assistant
-2025-11-24 14:10:47.412 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:10:47.425 INFO (MainThread) [music_assistant] Loaded player provider Chromecast
-2025-11-24 14:10:47.753 INFO (MainThread) [music_assistant.players] Player registered: 9d52d63d-500c-3b47-6e03-0ca6aadae9fc/Android TV
-2025-11-24 14:10:47.829 INFO (MainThread) [music_assistant.players] Player registered: ebd636b0-1e3e-7304-472e-7bd074202c0d/La Boîte concept
-2025-11-24 14:12:47.419 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:14:47.424 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:16:47.430 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:18:47.435 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:20:47.441 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:21:05.235 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
-2025-11-24 14:21:05.245 ERROR (MainThread) [music_assistant.webserver] Error handling message: player_queues/play_media: No playable items found
-2025-11-24 14:21:46.058 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album &
-2025-11-24 14:21:46.068 ERROR (MainThread) [music_assistant.webserver] Error handling message: player_queues/play_media: No playable items found
-2025-11-24 14:21:54.511 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album &
-2025-11-24 14:21:54.516 ERROR (MainThread) [music_assistant.webserver] Error handling message: player_queues/play_media: No playable items found
-2025-11-24 14:22:47.445 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:24:47.452 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:26:47.459 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:27:37.717 WARNING (MainThread) [music_assistant.webserver] Received unhandled GET request to // from 192.168.1.161
-headers: <CIMultiDictProxy('Host': '192.168.1.43:8095', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,es;q=0.6,it;q=0.5')>
-
-2025-11-24 14:28:47.465 WARNING (MainThread) [music_assistant] Error loading provider(instance) spotify--QN9Bo9be: Configuration is invalid (will be retried later)
-2025-11-24 14:29:59.370 WARNING (MainThread) [aiorun] Stopping the loop
-2025-11-24 14:29:59.370 INFO (MainThread) [aiorun] Entering shutdown phase.
-2025-11-24 14:29:59.370 INFO (MainThread) [aiorun] Executing provided shutdown_callback.
-2025-11-24 14:29:59.370 INFO (MainThread) [root] shutdown requested!
-2025-11-24 14:29:59.371 INFO (MainThread) [music_assistant] Stop called, cleaning up...
-2025-11-24 14:29:59.408 INFO (MainThread) [aiorun] Waiting for executor shutdown.
-2025-11-24 14:29:59.415 INFO (MainThread) [aiorun] Shutting down async generators
-2025-11-24 14:29:59.415 INFO (MainThread) [aiorun] Closing the loop.
-2025-11-24 14:29:59.416 INFO (MainThread) [aiorun] Leaving. Bye!
+2025-12-15 20:15:06.272 INFO (MainThread) [music_assistant] Loaded metadata provider fanart.tv
+2025-12-15 20:15:06.272 INFO (MainThread) [music_assistant] Loaded player provider Playergroup
+2025-12-15 20:15:06.273 INFO (MainThread) [music_assistant] Loaded player provider Music Assistant
+2025-12-15 20:15:06.273 INFO (MainThread) [music_assistant] Loaded metadata provider The Audio DB
+2025-12-15 20:15:06.274 INFO (MainThread) [music_assistant] Loaded music provider Music Assistant
+2025-12-15 20:15:06.274 INFO (MainThread) [music_assistant] Loaded metadata provider MusicBrainz
+2025-12-15 20:15:06.274 INFO (MainThread) [music_assistant] Loaded metadata provider LRCLIB
+2025-12-15 20:15:06.287 INFO (MainThread) [music_assistant] Loaded player provider Chromecast
+2025-12-15 20:15:07.041 INFO (MainThread) [music_assistant.players] Player registered: 9d52d63d-500c-3b47-6e03-0ca6aadae9fc/Android TV
+2025-12-15 20:15:07.143 INFO (MainThread) [music_assistant.players] Player registered: ebd636b0-1e3e-7304-472e-7bd074202c0d/La Boîte concept
+2025-12-15 20:15:08.877 INFO (MainThread) [music_assistant.spotify] Successfully logged in to Spotify as 1132820131
+2025-12-15 20:15:08.878 INFO (MainThread) [music_assistant] Loaded music provider Spotify
+2025-12-15 20:16:22.984 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
+2025-12-15 20:22:20.303 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album &
+2025-12-15 20:22:20.412 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-15 20:22:20.413 INFO (MainThread) [music_assistant.spotify] Retrying in 4 seconds...
+2025-12-15 20:22:24.444 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-15 20:22:24.444 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-15 20:25:27.151 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
+2025-12-15 20:25:41.010 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album aimée
+2025-12-15 20:25:59.144 WARNING (MainThread) [music_assistant.spotify] No audio received from librespot within timeout - will retry once
+2025-12-15 20:26:03.953 INFO (MainThread) [music_assistant.player_queues] Fetching tracks to play for album &
+2025-12-15 20:28:39.217 INFO (MainThread) [music_assistant.spotify] Attempt 1/5 failed: Spotify Rate Limiter
+2025-12-15 20:28:39.217 INFO (MainThread) [music_assistant.spotify] Retrying in 15 seconds...
+2025-12-15 20:28:54.310 INFO (MainThread) [music_assistant.spotify] Attempt 2/5 failed: Spotify Rate Limiter
+2025-12-15 20:28:54.310 INFO (MainThread) [music_assistant.spotify] Retrying in 1 seconds...
+2025-12-15 20:40:55.813 WARNING (MainThread) [aiorun] Stopping the loop
+2025-12-15 20:40:55.814 INFO (MainThread) [aiorun] Entering shutdown phase.
+2025-12-15 20:40:55.814 INFO (MainThread) [aiorun] Executing provided shutdown_callback.
+2025-12-15 20:40:55.814 INFO (MainThread) [root] shutdown requested!
+2025-12-15 20:40:55.814 INFO (MainThread) [music_assistant] Stop called, cleaning up...

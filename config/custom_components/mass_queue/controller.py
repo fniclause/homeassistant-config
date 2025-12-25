@@ -149,7 +149,18 @@ class MassQueueController:
         recs = await self._client.music.recommendations()
         if not providers:
             return recs
-        return [rec for rec in recs if rec.provider in providers]
+        rec_providers = []
+        for rec in recs:
+            if rec.provider not in rec_providers:
+                rec_providers.append(rec.provider)
+
+        used_rec_providers = [
+            rec_provider
+            for rec_provider in rec_providers
+            for provider in providers
+            if rec_provider.startswith(provider)
+        ]
+        return [rec for rec in recs if rec.provider in used_rec_providers]
 
     async def get_grouped_volume(self, player_id: str):
         """Get the grouped volume for a given player."""
@@ -192,7 +203,7 @@ class MassQueueController:
             except IndexError:
                 offset = 0
         offset = max(offset, 0)
-        return queue[offset : offset + limit]
+        return queue[offset : offset + limit] if queue else []
 
     async def update_queue_items(self, queue_id: str):
         """Update the queue items for a single queue."""
@@ -213,15 +224,23 @@ class MassQueueController:
             except IndexError:
                 offset = 0
         offset = max(offset, 0)
-        return await self._client.player_queues.get_player_queue_items(
-            queue_id=queue_id,
-            limit=limit,
-            offset=offset,
-        )
+        # HA 2025.12 Fix: `get_player_queue_items` replaced with `get_queue_items`
+        try:
+            return await self._client.player_queues.get_queue_items(
+                queue_id=queue_id,
+                limit=limit,
+                offset=offset,
+            )
+        except AttributeError:
+            return await self._client.player_queues.get_player_queue_items(
+                queue_id=queue_id,
+                limit=limit,
+                offset=offset,
+            )
 
     async def get_active_queue(self, queue_id: str):
         """Get the active queue for a single queue."""
-        return await self._client.get_active_queue(queue_id)
+        return await self._client.player_queues.get_active_queue(queue_id)
 
     async def get_queue_index(self, queue_id: str):
         """Get the active queue index for a single queue."""
@@ -308,7 +327,7 @@ class Queues:
 
     def get(self, queue_id):
         """Returns cached queue records."""
-        return self.queues[queue_id]
+        return self.queues.get(queue_id, [])
 
     def add(self, queue_id: str, queue_items: int):
         """Adds a single queue."""

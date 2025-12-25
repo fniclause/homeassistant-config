@@ -109,3 +109,83 @@
       message: Il va pleuvoir entre 8h et 20h aujourd'hui.
     action: notify.mobile_app_portable
   mode: single
+- id: '1765469811248'
+  alias: Allumer cuisine
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 199489278bdbd1a25ce3b5e92440b053
+    entity_id: 2e4b72bba305417d5e77afb44b9b91c4
+    domain: switch
+    trigger: device
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 77384a7249be5629a379f20e561b4c3c
+    entity_id: 60bf2ea1b178f2a97938c8e298e9f10a
+    domain: light
+  - type: turn_on
+    device_id: 057f416e21638f77231a3c9799ab180e
+    entity_id: f6d8119894a2b6e83dddf9da3cdc6b6c
+    domain: light
+  mode: single
+- id: '1765475537543'
+  alias: Allumer Salon
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 795a43456619c02aee04baadc66cfd92
+    entity_id: 5361d20258107833a1270a7c6983b21c
+    domain: switch
+    trigger: device
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: ab62c8f865b9f6781aca97a459ea8cf8
+    entity_id: 47cc433c14a2bcb6ce60f6a440d32ac5
+    domain: light
+  - type: turn_on
+    device_id: 0469d4441d7a11ded8a2cdd5c0018734
+    entity_id: 808758a25fab6e7e37d40262a1467f19
+    domain: light
+  mode: single
+- id: '1765477554552'
+  alias: Éteindre salon
+  description: ''
+  triggers:
+  - type: turned_off
+    device_id: 795a43456619c02aee04baadc66cfd92
+    entity_id: 5361d20258107833a1270a7c6983b21c
+    domain: switch
+    trigger: device
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: ab62c8f865b9f6781aca97a459ea8cf8
+    entity_id: 47cc433c14a2bcb6ce60f6a440d32ac5
+    domain: light
+  - type: turn_off
+    device_id: 0469d4441d7a11ded8a2cdd5c0018734
+    entity_id: 808758a25fab6e7e37d40262a1467f19
+    domain: light
+  mode: single
+- id: '1765479836364'
+  alias: Éteindre cuisine
+  description: ''
+  triggers:
+  - type: turned_off
+    device_id: 199489278bdbd1a25ce3b5e92440b053
+    entity_id: 2e4b72bba305417d5e77afb44b9b91c4
+    domain: switch
+    trigger: device
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 77384a7249be5629a379f20e561b4c3c
+    entity_id: 60bf2ea1b178f2a97938c8e298e9f10a
+    domain: light
+  - type: turn_off
+    device_id: 057f416e21638f77231a3c9799ab180e
+    entity_id: f6d8119894a2b6e83dddf9da3cdc6b6c
+    domain: light
+  mode: single

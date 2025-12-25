@@ -66,7 +66,7 @@
     },
     "spotify--QN9Bo9be": {
       "values": {
-        "refresh_token": "_encrypted_gAAAAABpJG2aSJyUKfsnDRTIegqyL266a6I7lz-TBe6PNP4mzte5MwAkl0IP6sbxJoDnGgPFas1eWPbccnYdWv90LPQofyU6bGQfI5AsbSjMFkpBk3GzCS7rpw9ZMFopHgxmy714eDf0RpoeOgVia6VzxVyFvVO9AJiSLbZBdmhmGXBGq0s6M5cmyJC5Y5nxoXGc4dZnfgrpULqVqvbrR5RcUfZMZu_Ew9b20IRnLgItzCQtCtZuoKciMTi3IHly6-k6jin0OXJY"
+        "refresh_token": "_encrypted_gAAAAABpTPiri0NSjVk8HKtpv9x9vDAXXFVIyZqD9u1zS8vHUfDwuK3bV8ONbA8kpRqpR7aA7XHvX3V5aB6x4mC47tuyeEA4AnM32J2ePOm5y90JlQRyv-y9G8t0AEWnmLnayeXE_-NiBRIZ2FVj8tib02-frCD4PUfmgFSmXVBVUW399I0ffZ7BWOA7TD7iE11A7bwgOqVZpmDms-nPI-HYL44wUUUH0zkEgb8r9ggIwwCZjhua57Ulfum1Unno8vTY4pYWOgoO"
       },
       "type": "music",
       "domain": "spotify",
@@ -120,23 +120,7 @@
       "enabled": true,
       "name": null,
       "available": true,
-      "default_name": ""
-    },
-    "ugp_re7fxsxi": {
-      "values": {
-        "group_members": [
-          "ebd636b0-1e3e-7304-472e-7bd074202c0d",
-          "ma_gsd228ylbf"
-        ],
-        "group_type": "universal",
-        "dynamic_members": false
-      },
-      "provider": "player_group",
-      "player_id": "ugp_re7fxsxi",
-      "enabled": true,
-      "name": null,
-      "available": false,
-      "default_name": "Salon"
+      "default_name": "La Boîte concept"
     },
     "ma_bzuzytzhap": {
       "values": {},
