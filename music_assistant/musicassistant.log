@@ -1,7 +1,7 @@
-2025-12-25 15:16:39.774 INFO (MainThread) [music_assistant] Starting Music Assistant Server (e63deababa2f45e4897526a3fff32eae) version 2.6.3 - HA add-on: False - Safe mode: False
-2025-12-25 15:16:39.786 INFO (MainThread) [music_assistant.cache] Initializing cache controller...
-2025-12-25 15:16:40.022 INFO (MainThread) [ffmpeg] Detected ffmpeg version 7.1.1 with libsoxr support
-2025-12-25 15:16:40.042 INFO (MainThread) [music_assistant.streams] 
+2025-12-26 00:11:53.330 INFO (MainThread) [music_assistant] Starting Music Assistant Server (e63deababa2f45e4897526a3fff32eae) version 2.6.3 - HA add-on: False - Safe mode: False
+2025-12-26 00:11:53.342 INFO (MainThread) [music_assistant.cache] Initializing cache controller...
+2025-12-26 00:11:53.560 INFO (MainThread) [ffmpeg] Detected ffmpeg version 7.1.1 with libsoxr support
+2025-12-26 00:11:53.588 INFO (MainThread) [music_assistant.streams] 
 
 ################################################################################
 Starting streamserver on  192.168.1.43:8097
@@ -11,19 +11,20 @@ See the documentation how to configure the publish IP for the Streamserver
 in Settings --> Core modules --> Streamserver
 ################################################################################
 
-2025-12-25 15:16:40.095 INFO (MainThread) [music_assistant.music] Using a sync interval of 720 minutes.
-2025-12-25 15:16:40.120 INFO (MainThread) [music_assistant.webserver] Starting webserver on  0.0.0.0:8095 - base url: http://192.168.1.43:8095
+2025-12-26 00:11:53.634 INFO (MainThread) [music_assistant.music] Using a sync interval of 720 minutes.
+2025-12-26 00:11:53.664 INFO (MainThread) [music_assistant.webserver] Starting webserver on  0.0.0.0:8095 - base url: http://192.168.1.43:8095
 #
 
-2025-12-25 15:16:41.313 INFO (MainThread) [music_assistant] Loaded player provider Music Assistant
-2025-12-25 15:16:41.313 INFO (MainThread) [music_assistant] Loaded music provider Music Assistant
-2025-12-25 15:16:41.314 INFO (MainThread) [music_assistant] Loaded metadata provider The Audio DB
-2025-12-25 15:16:41.315 INFO (MainThread) [music_assistant] Loaded player provider Playergroup
-2025-12-25 15:16:41.318 INFO (MainThread) [music_assistant] Loaded metadata provider LRCLIB
-2025-12-25 15:16:41.319 INFO (MainThread) [music_assistant] Loaded metadata provider MusicBrainz
-2025-12-25 15:16:41.320 INFO (MainThread) [music_assistant] Loaded metadata provider fanart.tv
-2025-12-25 15:16:41.338 INFO (MainThread) [music_assistant] Loaded player provider Chromecast
-2025-12-25 15:16:41.438 INFO (MainThread) [music_assistant.players] Player registered: ebd636b0-1e3e-7304-472e-7bd074202c0d/La Boîte concept
-2025-12-25 15:16:41.726 INFO (MainThread) [music_assistant.players] Player registered: 9d52d63d-500c-3b47-6e03-0ca6aadae9fc/Android TV
-2025-12-25 15:16:42.439 INFO (MainThread) [music_assistant.spotify] Successfully logged in to Spotify as 1132820131
-2025-12-25 15:16:42.439 INFO (MainThread) [music_assistant] Loaded music provider Spotify
+2025-12-26 00:11:54.944 INFO (MainThread) [music_assistant] Loaded metadata provider fanart.tv
+2025-12-26 00:11:54.945 INFO (MainThread) [music_assistant] Loaded player provider Playergroup
+2025-12-26 00:11:54.945 INFO (MainThread) [music_assistant] Loaded metadata provider LRCLIB
+2025-12-26 00:11:54.946 INFO (MainThread) [music_assistant] Loaded player provider Music Assistant
+2025-12-26 00:11:54.946 INFO (MainThread) [music_assistant] Loaded music provider Music Assistant
+2025-12-26 00:11:54.948 INFO (MainThread) [music_assistant] Loaded metadata provider The Audio DB
+2025-12-26 00:11:54.949 INFO (MainThread) [music_assistant] Loaded metadata provider MusicBrainz
+2025-12-26 00:11:54.973 INFO (MainThread) [music_assistant] Loaded player provider Chromecast
+2025-12-26 00:11:55.296 INFO (MainThread) [music_assistant.players] Player registered: 9d52d63d-500c-3b47-6e03-0ca6aadae9fc/Android TV
+2025-12-26 00:11:55.385 INFO (MainThread) [music_assistant.players] Player registered: ebd636b0-1e3e-7304-472e-7bd074202c0d/La Boîte concept
+2025-12-26 00:12:00.546 INFO (MainThread) [music_assistant.spotify] Successfully logged in to Spotify as 1132820131
+2025-12-26 00:12:00.547 INFO (MainThread) [music_assistant] Loaded music provider Spotify
+2025-12-26 01:02:13.988 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
