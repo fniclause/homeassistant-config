@@ -66,7 +66,7 @@
     },
     "spotify--QN9Bo9be": {
       "values": {
-        "refresh_token": "_encrypted_gAAAAABpTdLLhe9Aaqutyt31_QvmIM5_WY6czKsgaZ2yf0eJHueKNNM2Dlukzf9nYhpf9kZCFGfMs-ITmfOLQhhTJ2izgHOr2SNZ5Er3nfKEVLyuXJgKvPvqoEsB40bZ0SuqSzOPFN8gfg-22cZ6sUEux0Vs0kqq6PalTRS-j6UjyKrpiaX1AZ5PUUgnwcxyzESCov5UiIJcnHBKdB0POa1bfCr2VPIlmXW_ox1B6K_UWq0D-m5E5RuzOGIOjMgK6glj3Wj9QqyV"
+        "refresh_token": "_encrypted_gAAAAABpTqWjObSzxP5OBeqkZKTAetaphn1xK8dJFdGSIcigEvXCTnZYnOopg4R-Lf1vFW8D47L6QUJWls5jbbzo4yoh-qExdpsX_RIl-2rNMHZGoyTs16SdifP2Woj4O_0JXKw85tsfHPPABtcKfHOxrdLxhtYgDIr6kqUPIPEWA-6APoyVvg6xs_zJyUfj-Rbl5bC3bEf8j7NKeqfkSKtvuwG9__LZzNr7FSJzUPl2Skf4f7jq-h5W9aA-fWuzUtpsWsrmUkP6"
       },
       "type": "music",
       "domain": "spotify",
@@ -80,6 +80,20 @@
       "type": "player",
       "domain": "chromecast",
       "instance_id": "chromecast",
+      "enabled": true,
+      "name": null,
+      "last_error": null
+    },
+    "opensubsonic--3K5wWFdn": {
+      "values": {
+        "username": "flo",
+        "password": "_encrypted_gAAAAABpTpoNEcC57Ls3w2XaR-zkiRapyDkEoqldfuY21-22nC4VV2OOi9Z6vVDWAgvDX9gQsMocEQXYijOW1Qasbf2YG7WcdQ==",
+        "baseURL": "http://192.168.1.43",
+        "port": 4533
+      },
+      "type": "music",
+      "domain": "opensubsonic",
+      "instance_id": "opensubsonic--3K5wWFdn",
       "enabled": true,
       "name": null,
       "last_error": null

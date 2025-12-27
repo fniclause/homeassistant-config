@@ -1,7 +1,7 @@
-2025-12-26 00:11:53.330 INFO (MainThread) [music_assistant] Starting Music Assistant Server (e63deababa2f45e4897526a3fff32eae) version 2.6.3 - HA add-on: False - Safe mode: False
-2025-12-26 00:11:53.342 INFO (MainThread) [music_assistant.cache] Initializing cache controller...
-2025-12-26 00:11:53.560 INFO (MainThread) [ffmpeg] Detected ffmpeg version 7.1.1 with libsoxr support
-2025-12-26 00:11:53.588 INFO (MainThread) [music_assistant.streams] 
+2025-12-26 15:11:28.926 INFO (MainThread) [music_assistant] Starting Music Assistant Server (e63deababa2f45e4897526a3fff32eae) version 2.6.3 - HA add-on: False - Safe mode: False
+2025-12-26 15:11:28.940 INFO (MainThread) [music_assistant.cache] Initializing cache controller...
+2025-12-26 15:11:29.190 INFO (MainThread) [ffmpeg] Detected ffmpeg version 7.1.1 with libsoxr support
+2025-12-26 15:11:29.205 INFO (MainThread) [music_assistant.streams] 
 
 ################################################################################
 Starting streamserver on  192.168.1.43:8097
@@ -11,20 +11,37 @@ See the documentation how to configure the publish IP for the Streamserver
 in Settings --> Core modules --> Streamserver
 ################################################################################
 
-2025-12-26 00:11:53.634 INFO (MainThread) [music_assistant.music] Using a sync interval of 720 minutes.
-2025-12-26 00:11:53.664 INFO (MainThread) [music_assistant.webserver] Starting webserver on  0.0.0.0:8095 - base url: http://192.168.1.43:8095
+2025-12-26 15:11:29.254 INFO (MainThread) [music_assistant.music] Using a sync interval of 720 minutes.
+2025-12-26 15:11:29.290 INFO (MainThread) [music_assistant.webserver] Starting webserver on  0.0.0.0:8095 - base url: http://192.168.1.43:8095
 #
 
-2025-12-26 00:11:54.944 INFO (MainThread) [music_assistant] Loaded metadata provider fanart.tv
-2025-12-26 00:11:54.945 INFO (MainThread) [music_assistant] Loaded player provider Playergroup
-2025-12-26 00:11:54.945 INFO (MainThread) [music_assistant] Loaded metadata provider LRCLIB
-2025-12-26 00:11:54.946 INFO (MainThread) [music_assistant] Loaded player provider Music Assistant
-2025-12-26 00:11:54.946 INFO (MainThread) [music_assistant] Loaded music provider Music Assistant
-2025-12-26 00:11:54.948 INFO (MainThread) [music_assistant] Loaded metadata provider The Audio DB
-2025-12-26 00:11:54.949 INFO (MainThread) [music_assistant] Loaded metadata provider MusicBrainz
-2025-12-26 00:11:54.973 INFO (MainThread) [music_assistant] Loaded player provider Chromecast
-2025-12-26 00:11:55.296 INFO (MainThread) [music_assistant.players] Player registered: 9d52d63d-500c-3b47-6e03-0ca6aadae9fc/Android TV
-2025-12-26 00:11:55.385 INFO (MainThread) [music_assistant.players] Player registered: ebd636b0-1e3e-7304-472e-7bd074202c0d/La Boîte concept
-2025-12-26 00:12:00.546 INFO (MainThread) [music_assistant.spotify] Successfully logged in to Spotify as 1132820131
-2025-12-26 00:12:00.547 INFO (MainThread) [music_assistant] Loaded music provider Spotify
-2025-12-26 01:02:13.988 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
+2025-12-26 15:11:31.065 INFO (MainThread) [music_assistant] Loaded metadata provider fanart.tv
+2025-12-26 15:11:31.065 INFO (MainThread) [music_assistant] Loaded music provider Music Assistant
+2025-12-26 15:11:31.065 INFO (MainThread) [music_assistant] Loaded metadata provider LRCLIB
+2025-12-26 15:11:31.066 INFO (MainThread) [music_assistant] Loaded player provider Music Assistant
+2025-12-26 15:11:31.067 INFO (MainThread) [music_assistant] Loaded player provider Playergroup
+2025-12-26 15:11:31.067 INFO (MainThread) [music_assistant] Loaded metadata provider The Audio DB
+2025-12-26 15:11:31.070 INFO (MainThread) [music_assistant] Loaded metadata provider MusicBrainz
+2025-12-26 15:11:31.095 INFO (MainThread) [music_assistant] Loaded player provider Chromecast
+2025-12-26 15:11:31.115 INFO (MainThread) [music_assistant] Loaded music provider OpenSubsonic Media Server Library
+2025-12-26 15:11:31.387 INFO (MainThread) [music_assistant.players] Player registered: 9d52d63d-500c-3b47-6e03-0ca6aadae9fc/Android TV
+2025-12-26 15:11:31.709 INFO (MainThread) [music_assistant.spotify] Successfully logged in to Spotify as 1132820131
+2025-12-26 15:11:31.710 INFO (MainThread) [music_assistant] Loaded music provider Spotify
+2025-12-26 15:11:32.045 INFO (MainThread) [music_assistant.players] Player registered: ebd636b0-1e3e-7304-472e-7bd074202c0d/La Boîte concept
+2025-12-27 02:24:08.435 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
+2025-12-27 03:11:29.305 INFO (MainThread) [music_assistant.music] Sync task for OpenSubsonic Media Server Library completed
+2025-12-27 03:11:30.209 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-27 03:11:30.291 INFO (MainThread) [music_assistant.music] Sync task for OpenSubsonic Media Server Library completed
+2025-12-27 03:11:31.502 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-27 03:11:31.508 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-27 03:11:31.662 INFO (MainThread) [music_assistant.music] Sync task for OpenSubsonic Media Server Library completed
+2025-12-27 03:11:35.597 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-27 03:11:35.635 WARNING (MainThread) [music_assistant.music] Sync task for OpenSubsonic Media Server Library completed with errors
+2025-12-27 03:11:35.983 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-27 03:11:37.626 INFO (MainThread) [music_assistant.music] Sync task for Music Assistant completed
+2025-12-27 03:11:37.630 WARNING (MainThread) [music_assistant.music] Sync task for OpenSubsonic Media Server Library completed with errors
+2025-12-27 03:12:27.643 INFO (MainThread) [music_assistant.music] Sync task for Spotify completed
+2025-12-27 03:43:25.250 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Error reading from socket: socket connection broken
+2025-12-27 03:43:25.258 ERROR (Thread-7) [pychromecast.socket_client] [Android TV(192.168.1.190):8009] Failed to connect to service HostServiceInfo(host='192.168.1.190', port=8009), retrying in 5.0s
+2025-12-27 14:36:35.915 ERROR (Thread-8) [pychromecast.socket_client] [La Boîte concept(192.168.1.15):8009] Failed to connect to service HostServiceInfo(host='192.168.1.15', port=8009), retrying in 5.0s
+2025-12-27 17:14:01.912 WARNING (MainThread) [music_assistant.music] Error while fetching recommendations from OpenSubsonic Media Server Library: unhandled errors in a TaskGroup (1 sub-exception)

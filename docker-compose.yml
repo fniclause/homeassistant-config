@@ -40,6 +40,21 @@ services:
     #docker exec -it tailscale tailscale up --advertise-routes=192.168.1.0/24 --advertise-exit-node --accept-dns=false
     #Il te donne un lien https://login.tailscale.com/a/XXXX
 
+  navidrome:
+    image: deluan/navidrome:latest
+    container_name: navidrome
+    user: "1000:1000"
+    ports:
+      - "192.168.1.43:4533:4533"
+    volumes:
+      - /srv/soulseek/soulseek/downloads/complete:/music:ro
+      - /home/homeassistant/navidrome:/data
+    environment:
+      - ND_SCANSCHEDULE=1h
+      - ND_LOGLEVEL=info
+      - ND_ENABLETRANSCODING=false
+    restart: unless-stopped
+
   transmission:
     image: lscr.io/linuxserver/transmission
     container_name: transmission
@@ -62,10 +77,13 @@ services:
     depends_on:
       - gluetun
     volumes:
-      - /mnt/downloads/soulseek:/data
+      - /srv/soulseek/soulseek:/data
     environment:
       - PUID=1000
       - PGID=1000
+      - UMASK=002
+      - SLSKD_SHARED_DIR=/data/shared
+      - SLSKD_DOWNLOADS_DIR=/data/downloads
     restart: unless-stopped
 
   gluetun:
@@ -78,7 +96,9 @@ services:
     env_file:
       - .env.vpn
     ports:
-      - "9091:9091"
+      - "192.168.1.43:9091:9091"
+      - "192.168.1.43:6080:6080"
+      - "192.168.1.43:5900:5900"
     environment:
       - VPN_SERVICE_PROVIDER=protonvpn
       - SERVER_COUNTRIES=Netherlands,Switzerland
